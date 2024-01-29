@@ -33,7 +33,7 @@ class Solution {
 public:
     string minWindow(string s, string t) {
         map<char, int> mp;
-        for(auto elem: t) mp[elem]++;
+        for(auto i: t) mp[i]++;
         int lenT=t.size(), start=0, end=0;
         int len=INT_MAX, k=0;
         while(end<s.size()){
